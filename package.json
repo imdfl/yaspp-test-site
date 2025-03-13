@@ -6,7 +6,7 @@
   "scripts": {
     "preinit-site": "cd yaspp && yarn",
     "init-site": "npx --yes ts-node yaspp/scripts/build/init-yaspp --project .",
-    "preinit-clean": "git clone --branch master --single-branch https://github.com/imdfl/yaspp.git && cd yaspp && yarn",
+    "preinit-clean": "rm -rf yaspp/* && git clone --branch master --single-branch https://github.com/imdfl/yaspp.git && cd yaspp && yarn",
     "init-clean": "npx --yes ts-node yaspp/scripts/build/init-yaspp --project .",
     "dev": "cd yaspp && yarn dev",
     "build": "cd yaspp && yarn build",

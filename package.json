@@ -5,9 +5,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "preinit-site": "cd yaspp && yarn",
-    "init-site": "npx --yes ts-node yaspp/scripts/build/init-yaspp --project .",
+    "init-site": "cd yaspp && npx --yes ts-node src/scripts/init-yaspp --project ..",
     "preinit-clean": "rm -rf yaspp/* && git clone --branch master --single-branch https://github.com/imdfl/yaspp.git && cd yaspp && yarn",
-    "init-clean": "npx --yes ts-node yaspp/scripts/build/init-yaspp --project .",
+    "init-clean": "cd yaspp && npx --yes ts-node src/scripts/init-yaspp --project ..",
     "dev": "cd yaspp && yarn dev",
     "build": "cd yaspp && yarn build",
     "start": "cd yaspp && yarn start"
